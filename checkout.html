@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>checkout</title>
+</head>
+<body>
+<!--header-->    
+<header class="index-heading">
+    <section class="head11 flex">
+        <div class="head11-left">
+            <img src="images/flag.gif" alt="" width="35" height="20">
+            <h3>Gift Basket and Hampers Delivery in Germany</h3>
+        </div>
+        <div class="head11-right">
+            <a href="" alt="Corporate Orders">Corporate Orders</a>
+        </div>
+    </section>
+
+    <section class="head2 flex">
+        <div class="logo">
+            <div class="logo-img" onclick="window.location.href=''">
+                <img src="images/sitelogo.webp" alt="Logo" width="312" height="82">
+            </div>
+            <p>Send Gift Baskets & Hampers to Germany</p>
+        </div>
+
+        <div class="search-bar2">
+            <div class="search-bar2-main">
+            <input type="text" name="searchKey" id="searchKey" placeholder="Search flowers, cakes etc." pattern=".{3,}" required="" title="3 characters minimum">
+            <button type="submit" id="searchbtnn" aria-label="searchbtnn" class="search-btn serbtnnew"><i class="fa fa-search"></i></button>
+            </div>
+            <label id="searchAlert"></label>
+        </div>
+
+        <div class="head2-right flex">
+            <a href="" class="head2-options" aria-label="contact us">
+                <p>Contact Us</p>
+            </a>
+            <a href="" class="head2-options" title="Login"aria-label="login">
+                <i class="fa-solid fa-user"></i>
+            <!-- <a href="" class="pre-navigation ico-login">Log Out</a> -->
+            <a href="" class="head2-options">
+                <i class="fa-solid fa-cart-shopping" alt="Shopping Cart"aria-label="cart"></i>
+            </a>
+        </div>
+    </section>
+</header>
+<!--Navbar-->
+<nav class="categories flex">
+    <div class="view-cat" onClick="pc_menu()"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark" style="display:none;"></i>VIEW ALL CATEGORIES</div>
+    <ul class="flex PC-menu">
+    <li class="cat-menu "><a onClick="cat_menu_show()" class="category-btn">All Categories<span class="fa fa-caret-down"></span></a>
+    <div id="cat-mega-menu">
+    <ul class="cat-menu-ul">
+    <li><a  href="gifts_usa.asp" title="Exclusive Gift Baskets">Gourmet Gift Baskets</a></li>
+    <li><a href="winegifthampers.asp" title="Wine Gift Baskets">Wine Gift Baskets</a></li>
+    <li><a href="chocolates_usa.asp" title="chocolate">Chocolates</a></li>
+    <li><a href="hampers.asp" title="Hampers">Hampers</a></li>
+    <li><a href="luxury-gift.asp" title="Luxury Gift Baskets">Luxury Gift Baskets</a></li>					
+        </ul>
+    <ul class="cat-menu-ul">
+    <li><a href="fruits_usa.asp" title="Fruit Gift Baskets">Fruit Gift Baskets</a></li>
+    <li><a href="plants_usa.asp" title="Plants">Plants</a></li>
+    <li><a href="flowers_usa.asp" title="Fresh Flowers">Fresh Flowers</a></li>
+    <li><a href="christmas-hampers.asp" title="Christmas Hampers">Christmas Hampers</a></li>
+    <li><a href="non-alcohol-gift.asp" title="No-Alcohol Gift Baskets">No-Alcohol Baskets</a></li>
+    </ul>
+    <ul class="cat-menu-ul">
+    <li><a href="sameday_usa.asp" title="Same Day Delivery">Same Day Delivery</a></li>
+    <li><a href="gift-basket.asp" title="Gift Baskets">Gift Baskets</a></li>
+    <li><a href="corporate-gift.asp" title="Corporate Gifts">Corporate Gifts</a></li>
+    <li><a href="kosher-gift.asp" title="Kosher Gift Baskets">Kosher Gift Baskets</a></li>
+    </ul>
+    <ul class="cat-menu-ul">
+    <li><a href="hampers_scottish.asp" title="Scottish Hamper">Scottish Hamper</a></li>
+        <li><a href="hampers_british.asp" title="British Hamper">British Hamper</a></li>
+    <li><a href="hampers_irish.asp" title="Irish Hamper">Irish Hamper</a></li>
+    <li><a href="hampers_glutenfree.asp" title="Gluten Free Hamper">Gluten-Free Hamper</a></li>
+    </ul>
+    </div>
+    </li>
+    <li class="oc-menu" onClick="abc()"><a href="#" class="occation-btn">All Occasions<span class="fa fa-caret-down"></span></a>
+    <div id="oc-mega-menu">
+    <ul class="oc-menu-ul">
+    <li><a href="anniversary_usa.asp" title="Anniversary">Anniversary</a></li>
+    <li><a href="birthday_usa.asp" title="Birthday">Birthday</a></li>
+    <li><a href="congratulation_usa.asp" title="Congratulation">Congratulation</a></li>
+    <li><a href="condolence_usa.asp" title="Condolence">Condolence</a></li>
+    </ul>
+    <ul class="oc-menu-ul">
+    <li><a href="newborn_usa.asp" title="New Born">New Born</a></li>
+    <li><a href="wedding_usa.asp" title="Wedding">Wedding</a></li>
+    <li><a href="halloween_usa.asp" title="Halloween Gifts ">Halloween Gifts</a></li>
+    </ul>
+    <ul class="oc-menu-ul">
+    <li><a href="fathersday_usa.asp" title="Father's Day ">Father' Day</a></li>
+    <li><a href="christmas_usa.asp" title="Christmas Gifts">Christmas Gifts</a></li>
+    <li><a href="mothersday_usa.asp" title="Mother's Day">Mother's Day</a></li>
+    </ul>
+    <ul class="oc-menu-ul">
+    <li><a href="newyear_usa.asp" title="New Year">New Year Gifts</a></li>
+    <li><a href="thanksgivingday.asp" title="Thanks Giving Day">Thanksgiving Gifts</a></li>
+    <li><a href="valentine_usa.asp" title="Valentine Day">Valentine Day</a></li>
+    </ul>
+    </div>
+    </li>
+    <li class=""><a class=""href="mothersday_usa.asp" title="Father's Day">Father's Day</a></li>
+    <li><a class="birthday-btn" href="birthday_usa.asp" title="Birthday">Birthday</a></li>
+    <li><a class="wine-btn"href="winegifthampers.asp" title="Wine">Wine</a></li>
+    <li><a class="location-btn" href="location.asp" title="Location">Where we deliver</a></li>
+    <li  class="location-li"><a class="location-li-btn"href="sell-products.asp" title="Sale">Sale</a></li>
+    </ul>
+</nav>
+<ul class="breadcrumb">
+<li><a href="#">Home</a></li>
+<li><a href="#" class="tempting">Member details</a></li>
+</ul>
+
+<div class="member-container">
+    <div class="mem-left">
+        <div class="ord-sum">
+            <div class="sum-head">Order Summary</div>
+            <div class="sum-body">
+                <div class="order-blocks">
+                    <div class="prd-img"><img src="images/GBUS2040.webp" width="100" height="100"></div>
+                    <div class="title-date">
+                        <div class="prd-title">Stunning Gourmet Treats Box Presentation</div>
+                            <span>Thursday, May 25, 2023</span>
+                        </div>
+                    <div class="sum-price-block">1</div>
+                    <div class="sum-price-block">
+                        <div class="prd-pr-block">
+                            <div class="prd-price">
+                            <div>
+                                USD&nbsp;79.9
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div class="sum-price-block green-border">
+                    <label>Shipping Fee :</label>
+                    <div class="prd-pr-block">
+                        <div class="prd-price">USD 9.9</div>
+                       
+                    </div>
+                </div>
+                <div class="sum-price-block grd-tot">
+                    <label>Grand Total :</label>
+                    <div class="prd-pr-block">
+                        <div class="prd-price">USD 79.9</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mem-right">
+        <div class="del-details">
+            <div class="del-head">Delivery Details</div>
+            <div class="tabs-head">
+                <div><label><input type="radio" class="tab-new-user tab-link-active" name="user" checked="">New User</label></div>
+                <div><label><input type="radio" class="tab-reg-user" name="user">Registered User</label></div>
+            </div>
+            <div class="tab-body">
+                <div class="tab-body-1 tab-box-active" >
+                    <form>
+                        <div class="details-head">Billing / Sender's Information</div>
+                        <div>
+                            
+                            <div class="int-field">
+                                <label for="">Name<sup>*</sup></label>
+                                <div class="int-sub-field">
+                                    <select class="isf-name-prefix">
+                                        <option value="1">Mr.</option>
+                                        <option value="2">Mrs.</option>
+                                        <option value="3">Ms.</option>
+                                        <option value="4">Mr. & Mrs.</option>
+                                        <option value="5">Company</option>
+                                    </select>
+                                    <input type="text" name="" id="" class="isf-name" placeholder="Please Enter the name">
+                                </div>
+                            </div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">Address<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the Address">
+                                </div>
+                                <div class="int-field">
+                                    <label for="">Zip Code<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the Zip Code">
+                                </div>
+                            </div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">Country<sup>*</sup></label>
+                                    <select class="large" name="Country" id="Country" onchange="displayBookInfo()">
+                                        <option value="Select Country">---Select Country---</option>
+                                        <option value="AL">ALBANIA </option>
+                                        <option value="DZ">ALGERIA </option>
+                                        <option value="AD">ANDORRA </option>
+                                        <option value="AO">ANGOLA </option>
+                                        <option value="AI">ANGUILLA </option>
+                                        <option value="AG">ANTIGUA </option>
+                                        <option value="AR">ARGENTINA </option>
+                                        <option value="AM">ARMENIA </option>
+                                        <option value="AW">ARUBA </option>
+                                        <option value="AU">AUSTRALIA </option>
+                                        <option value="AT">AUSTRIA </option>
+                                        <option value="AZ">AZERBAIJAN </option>
+                                        <option value="BS">BAHAMAS </option>
+                                        <option value="BH">BAHRAIN </option>
+                                        <option value="BB">BARBADOS </option>
+                                        <option value="BY">BELARUS </option>
+                                        <option value="BE">BELGIUM </option>
+                                        <option value="BZ">BELIZE </option>
+                                        <option value="BJ">BENIN </option>
+                                        <option value="BM">BERMUDA </option>
+                                        <option value="BT">BHUTAN </option>
+                                        <option value="BO">BOLIVIA </option>
+                                        <option value="BA">BOSNIA AND HERZEGOVINA </option>
+                                        <option value="BW">BOTSWANA </option>
+                                        <option value="BR">BRAZIL </option>
+                                        <option value="VG">BRITISH VIRGIN ISLANDS </option>
+                                        <option value="BN">BRUNEI </option>
+                                        <option value="BG">BULGARIA </option>
+                                        <option value="BF">BURKINA FASO </option>
+                                        <option value="BI">BURMA </option>
+                                        <option value="KH">CAMBODIA </option>
+                                        <option value="CM">CAMEROON </option>
+                                        <option value="CA">CANADA </option>
+                                        <option value="CV">CAPE VERDE </option>
+                                        <option value="KY">CAYMAN ISLANDS </option>
+                                        <option value="TD">CHAD </option>
+                                        <option value="CL">CHILE </option>
+                                        <option value="CN">CHINA </option>
+                                        <option value="CO">COLOMBIA </option>
+                                        <option value="KM">COMOROS </option>
+                                        <option value="CG">CONGO </option>
+                                        <option value="CD">CONGO-KINSHASA </option>
+                                        <option value="CK">COOK ISLANDS </option>
+                                        <option value="CR">COSTA RICA </option>
+                                        <option value="HR">CROATIA </option>
+                                        <option value="CY">CYPRUS </option>
+                                        <option value="CZ">CZECH REPUBLIC </option>
+                                        <option value="DK">DENMARK </option>
+                                        <option value="DJ">DJIBOUTI </option>
+                                        <option value="DM">DOMINICA </option>
+                                        <option value="DO">DOMINICAN REPUBLIC </option>
+                                        <option value="EC">ECUADOR </option>
+                                        <option value="EG">EGYPT </option>
+                                        <option value="SV">EL SALVADOR </option>
+                                        <option value="ER">ERITREA </option>
+                                        <option value="EE">ESTONIA </option>
+                                        <option value="ET">ETHIOPIA </option>
+                                        <option value="FK">FALKLAND ISLANDS </option>
+                                        <option value="FO">FAROE ISLANDS </option>
+                                        <option value="FJ">FIJI </option>
+                                        <option value="FI">FINLAND </option>
+                                        <option value="FR">FRANCE </option>
+                                        <option value="GF">FRENCH GUIANA </option>
+                                        <option value="PF">FRENCH POLYNESIA </option>
+                                        <option value="GA">GABON </option>
+                                        <option value="GM">GAMBIA </option>
+                                        <option value="GE">GEORGIA </option>
+                                        <option value="DE">GERMANY </option>
+                                        <option value="GI">GIBRALTAR </option>
+                                        <option value="GR">GREECE </option>
+                                        <option value="GL">GREENLAND </option>
+                                        <option value="GD">GRENADA </option>
+                                        <option value="GP">GUADELOUPE </option>
+                                        <option value="GT">GUATEMALA </option>
+                                        <option value="GN">GUINEA </option>
+                                        <option value="GW">GUINEA-BISSAU </option>
+                                        <option value="GY">GUYANA </option>
+                                        <option value="HN">HONDURAS </option>
+                                        <option value="HK">HONG KONG </option>
+                                        <option value="HU">HUNGARY </option>
+                                        <option value="IS">ICELAND </option>
+                                        <option value="IN">INDIA </option>
+                                        <option value="ID">INDONESIA </option>
+                                        <option value="IE">IRELAND </option>
+                                        <option value="IL">ISRAEL </option>
+                                        <option value="IT">ITALY </option>
+                                        <option value="JM">JAMAICA </option>
+                                        <option value="JP">JAPAN </option>
+                                        <option value="JO">JORDAN </option>
+                                        <option value="KZ">KAZAKHSTAN </option>
+                                        <option value="KE">KENYA </option>
+                                        <option value="KI">KIRIBATI </option>
+                                        <option value="KW">KUWAIT </option>
+                                        <option value="KG">KYRGYZSTAN </option>
+                                        <option value="LA">LAOS </option>
+                                        <option value="LV">LATVIA </option>
+                                        <option value="LS">LESOTHO </option>
+                                        <option value="LBR">LIBERIA </option>
+                                        <option value="LT">LITHUANIA </option>
+                                        <option value="LU">LUXEMBOURG </option>
+                                        <option value="MK">MACEDONIA </option>
+                                        <option value="MG">MADAGASCAR </option>
+                                        <option value="MW">MALAWI </option>
+                                        <option value="MY">MALAYSIA </option>
+                                        <option value="MV">MALDIVES </option>
+                                        <option value="ML">MALI </option>
+                                        <option value="MT">MALTA </option>
+                                        <option value="MH">MARSHALL ISLANDS </option>
+                                        <option value="MQ">MARTINIQUE </option>
+                                        <option value="MR">MAURITANIA </option>
+                                        <option value="MU">MAURITIUS </option>
+                                        <option value="YT">MAYOTTE </option>
+                                        <option value="MX">MEXICO </option>
+                                        <option value="FM">MICRONESIA </option>
+                                        <option value="MD">MOLDOVA </option>
+                                        <option value="MC">MONACO </option>
+                                        <option value="MN">MONGOLIA </option>
+                                        <option value="ME">MONTENEGRO </option>
+                                        <option value="MS">MONTSERRAT </option>
+                                        <option value="MA">MOROCCO </option>
+                                        <option value="MZ">MOZAMBIQUE </option>
+                                        <option value="NA">NAMIBIA </option>
+                                        <option value="NR">NAURU </option>
+                                        <option value="NP">NEPAL </option>
+                                        <option value="NL">NETHERLANDS </option>
+                                        <option value="AN">NETHERLANDS ANTILLES </option>
+                                        <option value="NC">NEW CALEDONIA </option>
+                                        <option value="NZ">NEW ZEALAND </option>
+                                        <option value="NI">NICARAGUA </option>
+                                        <option value="NE">NIGER </option>
+                                        <option value="NG">NIGERIA </option>
+                                        <option value="NU">NIUE </option>
+                                        <option value="NF">NORFOLK ISLAND </option>
+                                        <option value="NO">NORTH KOREA </option>
+                                        <option value="OM">OMAN </option>
+                                        <option value="PW">PALAU </option>
+                                        <option value="PA">PANAMA </option>
+                                        <option value="PG">PAPUA NEW GUINEA </option>
+                                        <option value="PY">PARAGUAY </option>
+                                        <option value="PE">PERU </option>
+                                        <option value="PH">PHILIPPINES </option>
+                                        <option value="PN">PITCAIRN ISLAND </option>
+                                        <option value="PL">POLAND </option>
+                                        <option value="PT">PORTUGAL </option>
+                                        <option value="PRI">PUERTO RICO </option>
+                                        <option value="QA">QATAR </option>
+                                        <option value="RO">ROMANIA </option>
+                                        <option value="RU">RUSSIA </option>
+                                        <option value="RW">RWANDA </option>
+                                        <option value="WS">SAMOA </option>
+                                        <option value="SM">SAN MARINO </option>
+                                        <option value="ST">SAO TOME AND PRINCIPE </option>
+                                        <option value="SA">SAUDI ARABIA </option>
+                                        <option value="SN">SENEGAL </option>
+                                        <option value="RS">SERBIA AND MONTENEGRO </option>
+                                        <option value="SC">SEYCHELLES </option>
+                                        <option value="SL">SIERRA LEONE </option>
+                                        <option value="SG">SINGAPORE </option>
+                                        <option value="SK">SLOVAKIA </option>
+                                        <option value="SI">SLOVENIA </option>
+                                        <option value="SB">SOLOMON ISLANDS </option>
+                                        <option value="SO">SOMALIA </option>
+                                        <option value="ZA">SOUTH AFRICA </option>
+                                        <option value="KR">SOUTH KOREA </option>
+                                        <option value="ES">SPAIN </option>
+                                        <option value="LK">SRI LANKA </option>
+                                        <option value="SR">SURINAME </option>
+                                        <option value="SZ">SWAZILAND </option>
+                                        <option value="SE">SWEDEN </option>
+                                        <option value="CH">SWITZERLAND </option>
+                                        <option value="TW">TAIWAN </option>
+                                        <option value="TJ">TAJIKISTAN </option>
+                                        <option value="TZ">TANZANIA </option>
+                                        <option value="TH">THAILAND </option>
+                                        <option value="TG">TOGO </option>
+                                        <option value="TM">TURKMENISTAN </option>
+                                        <option value="TC">TURKS AND CAICOS ISLANDS </option>
+                                        <option value="TV">TUVALU </option>
+                                        <option value="TR">TURKEY </option>
+                                        <option value="UG">UGANDA </option>
+                                        <option value="UA">UKRAINE </option>
+                                        <option value="AE">UNITED ARAB EMIRATES </option>
+                                        <option value="GB">UNITED KINGDOM </option>
+                                        <option value="US">UNITED STATES </option>
+                                        <option value="UY">URUGUAY </option>
+                                        <option value="VU">VANUATU </option>
+                                        <option value="VA">VATICAN CITY (HOLY CITY) </option>
+                                        <option value="VE">VENEZUELA </option>
+                                        <option value="VN">VIETNAM </option>
+                                        <option value="WF">WALLIS AND FUTUNA </option>
+                                        <option value="YE">YEMEN </option>
+                                        <option value="ZM">ZAMBIA </option>
+                                        <option value="ZW">ZIMBABWE </option>
+                                    </select>
+                                </div>
+                                <div class="int-field">
+                                    <label for="">Phone<sup>*</sup></label>
+                                    <div class="int-sub-field">
+                                        <input type="text" name="" class="isf-phone-prefix" placeholder="eg. +1" readonly>
+                                        <input type="text" name="" id="" class="isf-phone" placeholder="Enter the Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">E-Mail<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the Email">
+                                </div>
+                                <div class="int-field">
+                                    <label for="">Password<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-head">Shipping / Recipient's Information <em>(Please Write In English Font Only)</em></div>
+                        <div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">First Name<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Please Enter the First Name">
+                                </div>
+                                <div class="int-field">
+                                    <label for="">Last Name<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Please Enter the Last Name">
+                                </div>
+                            </div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">Address<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the Address">
+                                </div>
+                                <div class="int-field">
+                                    <label for="">City<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the City Name">
+                                </div>
+                            </div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">State<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the State Name">
+                                </div>
+                                <div class="int-field">
+                                    <label for="">Zip Code<sup>*</sup></label>
+                                    <input type="number" name="" id="" placeholder="Enter the Zip Code">
+                                </div>
+                            </div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">Country<sup>*</sup></label>
+                                    <input type="text" name="" id="" readonly>
+                                </div>
+                                <div class="int-field">
+                                    <label for="">Phone<sup>*</sup></label>
+                                    <div class="int-sub-field">
+                                        <input type="text" name="" class="isf-phone-prefix" placeholder="eg. +1" readonly>
+                                        <input type="text" name="" id="" class="isf-phone" placeholder="Enter the Phone Number">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-head">Card Message<em>(Please Write In English Font Only)</em></div>
+                        <div>
+                            <div class="int-field">
+                                <label for="">Greeting Type :</label>
+                                <select class="large greeting-select" name="Greeting_Type" id="Greeting_Type">
+                                    <option value="Birthday">Birthday</option>
+                                    <option value="Wedding">Wedding</option>
+                                    <option value="Anniversary">Anniversary</option>
+                                    <option value="Valentines Day">Valentines Day</option>
+                                    <option value="Christmas">Christmas</option>
+                                    <option value="New Year">New Year</option>
+                                </select>
+                            </div>
+                            <div class="int-two-field">
+                                <div class="int-field">
+                                    <label for="">To :</label>
+                                    <input type="text" name="" id="" placeholder="Please Enter the Person's Name">
+                                </div>
+                                <div class="int-field">
+                                    <label for="">Sender's Name :<sup>*</sup></label>
+                                    <input type="text" name="" id="" placeholder="Enter the Sender's Name">
+                                </div>
+                               
+                            </div>
+                            <div class="int-field messbox">
+                                <label for="">Message :</label>
+                                <textarea name="Recepient_Message" id="Recepient_Message" cols="30" rows="10" class="message" onkeyup="charcount(this)" placeholder="eg. Any special instruction you want to mention"></textarea>
+                                <div class="maxchar">( Maximum Characters: 200 )</div>
+                                <span class="chartext">Characters remaing<p id="countnum"></p></span>
+                            </div>
+                           
+                                
+                                <div class="int-field messbox" style="margin-top: 3px;">
+                                    <label for="">Special Instruction For Seller :</label>
+                                    <textarea name="Spl_Inst_To_Florist" id="Spl_Inst_To_Florist" cols="30" rows="10" class="message" onkeyup="charcount2(this)" placeholder="eg. Any special instruction you want to mention, We shall try our best to follow the same but cannot guarantee."></textarea>
+                                    <div class="maxchar">( Maximum Characters: 200 )</div>
+                                    <span class="chartext">Characters remaing<p id="countnum1"></p></span>
+                                </div>
+                          
+                        </div>
+                        <div class="details-head">Payment Options</div>
+                            <div class="pay-options">
+                                <div class="method paypal"><img src="images/paypal.svg" alt=""></div>
+                                <div class="method credit"><i class="fa-solid fa-credit-card"></i><div>Debit or Credit Card</div></div>
+                                <div class="method skrill">pay through skrill</div>
+                            </div>
+                    </form>    
+                </div>
+                <div class="tab-body-2" >
+                    <form>
+                        <div class="details-head">If Member, Login For Auto Fill Up:</div>
+                        <div>
+                            <div class="int-field">
+                                <label for="">Email Id<sup>*</sup></label>
+                                <input type="text" name="" id="" placeholder="Enter Your Email ID">
+                            </div>
+                            <div class="int-field">
+                                <label for="">Password<sup>*</sup></label>
+                                <input type="text" name="" id="" placeholder="Enter Your password">
+                            </div>
+                            <div class="int-field">
+                                <input type="button" value="Login">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
+<footer class="flex" id="footmenu">
+<div class="f-categories">
+<p>categories</p>
+<ul>
+<li><a href="flowers_usa.asp" title="Flowers">flowers</a></li>
+<li><a href="plants_usa.asp" title="Plants">plants</a></li>
+<li><a href="fruits_usa.asp" title="Fresh Fruits">fresh fruits</a></li>
+<li><a href="cakes_usa.asp" title="Cakes">cakes</a></li>
+<li><a href="chocolates_usa.asp" title="Chocolates">chocolates</a></li>
+<li><a href="winegifthampers.asp" title="Wines">wines</a></li>
+<li><a href="gift-basket.asp" title="Gift Baskets">gift baskets</a></li>
+<li><a href="corporate-gift.asp" title="Corporate Gifts">corporate gifts</a></li>
+<li><a href="sameday_usa.asp" title="Same Day Delivery">same day delivery</a></li>
+</ul>
+</div>
+<div class="f-categories">
+<p>occasions</p>
+<ul>
+<li><a href="birthday_usa.asp" title="Birthday">birthday</a></li>
+<li><a href="anniversary_usa.asp" title="Anniversary">anniversary</a></li>
+<li><a href="wedding_usa.asp" title="Wedding">wedding</a></li>
+<li><a href="condolence_usa.asp" title="Condolence">condolence</a></li>
+<li><a href="valentine_usa.asp" title="Valentine's Day">valentine's day</a></li>
+<li><a href="womensday_usa.asp" title="Women's Day">women's day</a></li>
+<li><a href="fathersday_usa.asp" title="Father's Day">father's day</a></li>
+<li><a href="christmas_usa.asp" title="Christmas Gifts">christmas gifts</a></li>
+<li><a href="mothersday_usa.asp" title="Mother's Day">mother's day</a></li>
+<li><a href="newyear_usa.asp" title="New Year Gifts">new year gifts</a></li>
+</ul>
+</div>
+<div class="f-categories">
+<p>locations</p>
+<ul>
+<li><a href="">Aachen</a></li>
+<li><a href="">Berlin</a></li>
+<li><a href="">Kassel</a></li>
+<li><a href="">Ottersberg</a></li>
+<li><a href="">Moritzburg</a></li>
+<li><a href="">Zittau</a></li>
+<li><a href="">Heidelberg</a></li>
+<li><a href="">Iserlohn</a></li>
+<li><a href="">Vechta</a></li>
+<li><a href="">Weimar</a></li>
+</ul>
+</div>
+<div class="f-categories">
+<p>policy info.</p>
+<ul>
+<li><a href="about_us.asp">about us</a></li>
+<li><a href="terms.asp">terms & conditions</a></li>
+
+<li><a href="contact_us.asp">contact us</a></li>
+<li><a href="disclaimer.asp">disclaimer</a></li>
+<li><a href="sitemap.asp">site map</a></li>
+</ul>
+</div>
+
+<div class="f-categories">
+<div class="f-logo">
+    <a href="">
+    <img src="images/sitelogo.webp" alt="" width="100%" height="75"></a>
+<p><b>&copy;</b>&nbsp;2022 by <a href="" style="color:black;">giftbasketsgermany.de</a></p>
+    
+    </a>
+</div>
+</div>
+</footer>
+<script language="javascript">
+    function charcount(obj){
+        var maxlen=200;
+        var strlen=obj.value.length;
+        
+        if(strlen >= maxlen){
+            Recepient_Message.value = Recepient_Message.value.substring(0,maxlen);
+            document.getElementById('countnum').innerHTML = 0;
+        }else{
+            document.getElementById('countnum').innerHTML =  ( maxlen - strlen ) ;
+        }
+    }
+    function charcount2(obj){
+        var maxlen=200;
+        var strlen=obj.value.length;
+        
+        if(strlen >= maxlen){
+            Spl_Inst_To_Florist.value = Spl_Inst_To_Florist.value.substring(0,maxlen);
+            document.getElementById('countnum1').innerHTML = 0;
+        }else{
+            document.getElementById('countnum1').innerHTML =  ( maxlen - strlen ) ;
+        }
+    }
+    </script>
+<script language="javascript">
+    function openPage(pageName,elmnt,color) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+        document.getElementById(pageName).style.display = "block";
+        elmnt.style.backgroundColor = color;
+    }
+
+
+    
+    let btn1 = document.querySelector(".tab-new-user")
+    let btn2 = document.querySelector(".tab-reg-user")
+
+    let box1 = document.querySelector(".tab-body-1")
+    let box2 = document.querySelector(".tab-body-2")
+
+    btn1.addEventListener('click',function(){
+        box1.classList.add("tab-box-active")
+        box2.classList.remove("tab-box-active")
+
+        btn1.classList.add("tab-link-active")
+        btn2.classList.remove("tab-link-active")
+    })
+    btn2.addEventListener('click',function(){
+        box2.classList.add("tab-box-active")
+        box1.classList.remove("tab-box-active")
+
+        btn2.classList.add("tab-link-active")
+        btn1.classList.remove("tab-link-active")
+    })
+
+
+document.getElementById("defaultOpen").click();
+
+</script>
+</body>
+</html>

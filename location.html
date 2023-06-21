@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->    
+<header class="index-heading">
+<section class="head11 flex">
+    <div class="head11-left">
+        <img src="images/flag.gif" alt="" width="35" height="20">
+        <h3>Gift Basket and Hampers Delivery in Germany</h3>
+    </div>
+    <div class="head11-right">
+        <a href="" alt="Corporate Orders">Corporate Orders</a>
+    </div>
+</section>
+
+<section class="head2 flex">
+    <div class="logo">
+        <div class="logo-img">
+            <img src="images/sitelogo.webp" alt="Logo" width="312" height="82">
+        </div>
+        <p>Send Gift Baskets & Hampers to Germany</p>
+    </div>
+
+    <div class="search-bar2">
+        <div class="search-bar2-main">
+        <input type="text" name="searchKey" id="searchKey" placeholder="Search flowers,cake etc." pattern=".{3,}" required="" title="3 characters minimum">
+        <button type="submit" id="searchbtnn" aria-label="searchbtnn" class="search-btn serbtnnew"><i class="fa fa-search"></i></button>
+        </div>
+        <label id="searchAlert"></label>
+    </div>
+
+    <div class="head2-right flex">
+        <a href="" class="head2-options" aria-label="contact us">
+            <p>Contact Us</p>
+        </a>
+        <a href="" class="head2-options" title="Login"aria-label="login">
+            <i class="fa-solid fa-user"></i>
+        <!-- <a href="" class="pre-navigation ico-login">Log Out</a> -->
+        <a href="" class="head2-options">
+            <i class="fa-solid fa-cart-shopping" alt="Shopping Cart"aria-label="cart"></i>
+        </a>
+    </div>
+</section>
+</header>
+<!--Navbar-->
+<nav class="categories flex">
+<div class="view-cat" onClick="pc_menu()"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark" style="display:none;"></i>VIEW ALL CATEGORIES</div>
+<ul class="flex PC-menu">
+<li class="cat-menu "><a onClick="cat_menu_show()" class="category-btn">All Categories<span class="fa fa-caret-down"></span></a>
+<div id="cat-mega-menu">
+<ul class="cat-menu-ul">
+<li><a  href="gifts_usa.asp" title="Exclusive Gift Baskets">Gourmet Gift Baskets</a></li>
+<li><a href="winegifthampers.asp" title="Wine Gift Baskets">Wine Gift Baskets</a></li>
+<li><a href="chocolates_usa.asp" title="chocolate">Chocolates</a></li>
+<li><a href="hampers.asp" title="Hampers">Hampers</a></li>
+<li><a href="luxury-gift.asp" title="Luxury Gift Baskets">Luxury Gift Baskets</a></li>					
+    </ul>
+<ul class="cat-menu-ul">
+<li><a href="fruits_usa.asp" title="Fruit Gift Baskets">Fruit Gift Baskets</a></li>
+<li><a href="plants_usa.asp" title="Plants">Plants</a></li>
+<li><a href="flowers_usa.asp" title="Fresh Flowers">Fresh Flowers</a></li>
+<li><a href="christmas-hampers.asp" title="Christmas Hampers">Christmas Hampers</a></li>
+<li><a href="non-alcohol-gift.asp" title="No-Alcohol Gift Baskets">No-Alcohol Baskets</a></li>
+</ul>
+<ul class="cat-menu-ul">
+<li><a href="sameday_usa.asp" title="Same Day Delivery">Same Day Delivery</a></li>
+<li><a href="gift-basket.asp" title="Gift Baskets">Gift Baskets</a></li>
+<li><a href="corporate-gift.asp" title="Corporate Gifts">Corporate Gifts</a></li>
+<li><a href="kosher-gift.asp" title="Kosher Gift Baskets">Kosher Gift Baskets</a></li>
+</ul>
+<ul class="cat-menu-ul">
+<li><a href="hampers_scottish.asp" title="Scottish Hamper">Scottish Hamper</a></li>
+    <li><a href="hampers_british.asp" title="British Hamper">British Hamper</a></li>
+<li><a href="hampers_irish.asp" title="Irish Hamper">Irish Hamper</a></li>
+<li><a href="hampers_glutenfree.asp" title="Gluten Free Hamper">Gluten-Free Hamper</a></li>
+</ul>
+</div>
+</li>
+<li class="oc-menu" onClick="abc()"><a href="#" class="occation-btn">All Occasions<span class="fa fa-caret-down"></span></a>
+<div id="oc-mega-menu">
+<ul class="oc-menu-ul">
+<li><a href="anniversary_usa.asp" title="Anniversary">Anniversary</a></li>
+<li><a href="birthday_usa.asp" title="Birthday">Birthday</a></li>
+<li><a href="congratulation_usa.asp" title="Congratulation">Congratulation</a></li>
+<li><a href="condolence_usa.asp" title="Condolence">Condolence</a></li>
+</ul>
+<ul class="oc-menu-ul">
+<li><a href="newborn_usa.asp" title="New Born">New Born</a></li>
+<li><a href="wedding_usa.asp" title="Wedding">Wedding</a></li>
+<li><a href="halloween_usa.asp" title="Halloween Gifts ">Halloween Gifts</a></li>
+</ul>
+<ul class="oc-menu-ul">
+<li><a href="fathersday_usa.asp" title="Father's Day ">Father' Day</a></li>
+<li><a href="christmas_usa.asp" title="Christmas Gifts">Christmas Gifts</a></li>
+<li><a href="mothersday_usa.asp" title="Mother's Day">Mother's Day</a></li>
+</ul>
+<ul class="oc-menu-ul">
+<li><a href="newyear_usa.asp" title="New Year">New Year Gifts</a></li>
+<li><a href="thanksgivingday.asp" title="Thanks Giving Day">Thanksgiving Gifts</a></li>
+<li><a href="valentine_usa.asp" title="Valentine Day">Valentine Day</a></li>
+</ul>
+</div>
+</li>
+<li class=""><a class=""href="mothersday_usa.asp" title="Father's Day">Father's Day</a></li>
+<li><a class="birthday-btn" href="birthday_usa.asp" title="Birthday">Birthday</a></li>
+<li><a class="wine-btn"href="winegifthampers.asp" title="Wine">Wine</a></li>
+<li><a class="location-btn" href="location.asp" title="Location">Where we deliver</a></li>
+<li  class="location-li"><a class="location-li-btn"href="sell-products.asp" title="Sale">Sale</a></li>
+</ul>
+</nav>
+
+<ul class="breadcrumb">
+<li><a href="#">Home</a></li>
+<li>Locations</li>
+</ul>    
+
+<div class="inside-container">
+    <div class="inside-heading">Location</div>
+    <div class="inside-txt">
+        <ul class="clearfix">
+			<li><a href="gift-baskets-aachen.asp" title="Aachen">Aachen</a></li>
+			<li><a href="gift-baskets-aalen.asp" title="Aalen">Aalen</a></li>
+			<li><a href="gift-baskets-amberg.asp" title="Amberg">Amberg</a></li>
+			<li><a href="gift-baskets-ansbach.asp" title="Ansbach">Ansbach</a></li>
+			<li><a href="gift-baskets-aschaffenbu.asp" title="Aschaffenbu">Aschaffenbu</a></li>
+			<li><a href="gift-baskets-augsburg.asp" title="Augsburg">Augsburg</a></li>
+			<li><a href="gift-baskets-bad-honnef.asp" title="Bad Honnef">Bad Honnef</a></li>
+			<li><a href="gift-baskets-bad-sooden.asp" title="Bad Sooden">Bad Sooden</a></li>
+			<li><a href="gift-baskets-bamberg.asp" title="Bamberg">Bamberg</a></li>
+			<li><a href="gift-baskets-bayreuth.asp" title="Bayreuth">Bayreuth</a></li>
+			<li><a href="gift-baskets-benediktbeu.asp" title="Benediktbeu">Benediktbeu</a></li>
+			<li><a href="gift-baskets-berlin.asp" title="Berlin">Berlin</a></li>         
+			<li><a href="gift-baskets-biberach.asp" title="Biberach">Biberach</a></li>
+			<li><a href="gift-baskets-bielefeld.asp" title="Bielefeld">Bielefeld</a></li>
+			<li><a href="gift-baskets-bingen.asp" title="Bingen">Bingen</a></li>
+			<li><a href="gift-baskets-bochum.asp" title="Bochum">Bochum</a></li>
+			<li><a href="gift-baskets-bonn.asp" title="Bonn">Bonn</a></li>
+			<li><a href="gift-baskets-brandenburg.asp" title="Brandenburg">Brandenburg</a></li>
+			<li><a href="gift-baskets-braunschweig.asp" title="Braunschweig">Braunschweig</a></li>
+			<li><a href="gift-baskets-bremen.asp" title="Bremen">Bremen</a></li>
+			<li><a href="gift-baskets-bremerhaven.asp" title="Bremerhaven">Bremerhaven</a></li>
+			<li><a href="gift-baskets-bruchsal.asp" title="Bruchsal">Bruchsal</a></li>
+			<li><a href="gift-baskets-brühl.asp" title="Brühl">Brühl</a></li>
+			<li><a href="gift-baskets-chemnitz.asp" title="Chemnitz">Chemnitz</a></li>
+			<li><a href="gift-baskets-clausthal.asp" title="Clausthal">Clausthal</a></li>
+			<li><a href="gift-baskets-coburg.asp" title="Coburg">Coburg</a></li>
+			<li><a href="gift-baskets-cologne.asp" title="Cologne">Cologne</a></li>
+			<li><a href="gift-baskets-constance.asp" title="Constance">Constance</a></li>
+			<li><a href="gift-baskets-cottbus.asp" title="Cottbus">Cottbus</a></li>
+			<li><a href="gift-baskets-darmstadt.asp" title="Darmstadt">Darmstadt</a></li>
+			<li><a href="gift-baskets-deggendorf.asp" title="Deggendorf">Deggendorf</a></li>
+			<li><a href="gift-baskets-detmold.asp" title="Detmold">Detmold</a></li>
+			<li><a href="gift-baskets-dortmund.asp" title="Dortmund">Dortmund</a></li>
+			<li><a href="gift-baskets-dresden.asp" title="Dresden">Dresden</a></li>
+			<li><a href="gift-baskets-duisburg.asp" title="Duisburg">Duisburg</a></li>
+			<li><a href="gift-baskets-düsseldorf.asp" title="Düsseldorf">Düsseldorf</a></li>
+			<li><a href="gift-baskets-eberswalde.asp" title="Eberswalde">Eberswalde</a></li>
+			<li><a href="gift-baskets-eichstatt.asp" title="Eichstatt">Eichstatt</a></li>
+			<li><a href="gift-baskets-elmshorn.asp" title="Elmshorn">Elmshorn</a></li>
+			<li><a href="gift-baskets-erfurt.asp" title="Erfurt">Erfurt</a></li>
+			<li><a href="gift-baskets-erlangen.asp" title="Erlangen">Erlangen</a></li>
+			<li><a href="gift-baskets-essen.asp" title="Essen">Essen</a></li>
+			<li><a href="gift-baskets-esslingen.asp" title="Esslingen">Esslingen</a></li>
+			<li><a href="gift-baskets-flensburg.asp" title="Flensburg">Flensburg</a></li>
+			<li><a href="gift-baskets-frankfurt.asp" title="Frankfurt">Frankfurt</a></li>
+			<li><a href="gift-baskets-freiberg.asp" title="Freiberg">Freiberg</a></li>
+			<li><a href="gift-baskets-freiburg.asp" title="Freiburg">Freiburg</a></li>
+			<li><a href="gift-baskets-freising.asp" title="Freising">Freising</a></li>
+			<li><a href="gift-baskets-friedensau.asp" title="Friedensau">Friedensau</a></li>
+			<li><a href="gift-baskets-fulda.asp" title="Fulda">Fulda</a></li>
+			<li><a href="gift-baskets-furtwangen.asp" title="Furtwangen">Furtwangen</a></li>
+			<li><a href="gift-baskets-gelsenkirch.asp" title="Gelsenkirch">Gelsenkirch</a></li>
+			<li><a href="gift-baskets-gieben.asp" title="Gieben">Gieben</a></li>
+			<li><a href="gift-baskets-gottingen.asp" title="Gottingen">Gottingen</a></li>
+			<li><a href="gift-baskets-greifswald.asp" title="Greifswald">Greifswald</a></li>
+			<li><a href="gift-baskets-hagen.asp" title="Hagen">Hagen</a></li>
+			<li><a href="gift-baskets-halle.asp" title="Halle">Halle</a></li>
+			<li><a href="gift-baskets-hamburg.asp" title="Hamburg">Hamburg</a></li>
+			<li><a href="gift-baskets-hanover.asp" title="Hanover">Hanover</a></li>
+			<li><a href="gift-baskets-heide.asp" title="Heide">Heide</a></li>
+			<li><a href="gift-baskets-heidelberg.asp" title="Heidelberg">Heidelberg</a></li>
+			<li><a href="gift-baskets-heilbronn.asp" title="Heilbronn">Heilbronn</a></li>
+			<li><a href="gift-baskets-herford.asp" title="Herford">Herford</a></li>
+			<li><a href="gift-baskets-hildesheim.asp" title="Hildesheim">Hildesheim</a></li>
+			<li><a href="gift-baskets-hof.asp" title="Hof">Hof</a></li>
+			<li><a href="gift-baskets-idstein.asp" title="Idstein">Idstein</a></li>
+			<li><a href="gift-baskets-ilmenau.asp" title="Ilmenau">Ilmenau</a></li>
+			<li><a href="gift-baskets-ingolstadt.asp" title="Ingolstadt">Ingolstadt</a></li>
+			<li><a href="gift-baskets-iserlohn.asp" title="Iserlohn">Iserlohn</a></li>
+			<li><a href="gift-baskets-isnyallga.asp" title="IsnyAllga">IsnyAllga</a></li>
+			<li><a href="gift-baskets-isnyjena.asp" title="IsnyJena">IsnyJena</a></li>
+			<li><a href="gift-baskets-kaiserslaut.asp" title="Kaiserslaut">Kaiserslaut</a></li>
+			<li><a href="gift-baskets-karlsruhe.asp" title="Karlsruhe">Karlsruhe</a></li>
+			<li><a href="gift-baskets-kassel.asp" title="Kassel">Kassel</a></li>
+			<li><a href="gift-baskets-kempten.asp" title="Kempten">Kempten</a></li>
+			<li><a href="gift-baskets-kiel.asp" title="Kiel">Kiel</a></li>
+			<li><a href="gift-baskets-koblenz.asp" title="Koblenz">Koblenz</a></li>
+			<li><a href="gift-baskets-köthen.asp" title="Köthen">Köthen</a></li>
+			<li><a href="gift-baskets-krefeld.asp" title="Krefeld">Krefeld</a></li>
+			<li><a href="gift-baskets-landau.asp" title="Landau">Landau</a></li>
+			<li><a href="gift-baskets-landshut.asp" title="Landshut">Landshut</a></li>
+			<li><a href="gift-baskets-leipzig.asp" title="Leipzig">Leipzig</a></li>
+			<li><a href="gift-baskets-lemgo.asp" title="Lemgo">Lemgo</a></li>
+			<li><a href="gift-baskets-lübeck.asp" title="Lübeck">Lübeck</a></li>
+			<li><a href="gift-baskets-ludwigsburg.asp" title="Ludwigsburg">Ludwigsburg</a></li>
+			<li><a href="gift-baskets-ludwigshafen.asp" title="Ludwigshafen">Ludwigshafen</a></li>
+			<li><a href="gift-baskets-luneburg.asp" title="Luneburg">Luneburg</a></li>
+			<li><a href="gift-baskets-magdeburg.asp" title="Magdeburg">Magdeburg</a></li>
+			<li><a href="gift-baskets-mainz.asp" title="Mainz">Mainz</a></li>
+			<li><a href="gift-baskets-mannheim.asp" title="Mannheim">Mannheim</a></li>
+			<li><a href="gift-baskets-marburg.asp" title="Marburg">Marburg</a></li>
+			<li><a href="gift-baskets-merseburg.asp" title="Merseburg">Merseburg</a></li>
+			<li><a href="gift-baskets-mittweida.asp" title="Mittweida">Mittweida</a></li>
+			<li><a href="gift-baskets-moritzburg.asp" title="Moritzburg">Moritzburg</a></li>
+			<li><a href="gift-baskets-munich.asp" title="Munich">Munich</a></li>
+			<li><a href="gift-baskets-münster.asp" title="Münster">Münster</a></li>
+			<li><a href="gift-baskets-neu-ulm.asp" title="Neu-ulm">Neu-ulm</a></li>
+			<li><a href="gift-baskets-neubrandenb.asp" title="Neubrandenb">Neubrandenb</a></li>
+			<li><a href="gift-baskets-neuendettel.asp" title="Neuendettel">Neuendettel</a></li>
+			<li><a href="gift-baskets-nordhausen.asp" title="Nordhausen">Nordhausen</a></li>
+			<li><a href="gift-baskets-nuremberg.asp" title="Nuremberg">Nuremberg</a></li>
+			<li><a href="gift-baskets-nürtingen.asp" title="Nürtingen">Nürtingen</a></li>
+			<li><a href="gift-baskets-oberursel.asp" title="Oberursel">Oberursel</a></li>
+			<li><a href="gift-baskets-oestrich-wi.asp" title="Oestrich-wi">Oestrich-wi</a></li>
+			<li><a href="gift-baskets-offenbach.asp" title="Offenbach">Offenbach</a></li>
+			<li><a href="gift-baskets-offenburg.asp" title="Offenburg">Offenburg</a></li>
+			<li><a href="gift-baskets-oldenburg.asp" title="Oldenburg">Oldenburg</a></li>
+			<li><a href="gift-baskets-osnabrück.asp" title="Osnabrück">Osnabrück</a></li>
+			<li><a href="gift-baskets-ottersberg.asp" title="Ottersberg">Ottersberg</a></li>
+			<li><a href="gift-baskets-paderborn.asp" title="Paderborn">Paderborn</a></li>
+			<li><a href="gift-baskets-passau.asp" title="Passau">Passau</a></li>
+			<li><a href="gift-baskets-pforzheim.asp" title="Pforzheim">Pforzheim</a></li>
+			<li><a href="gift-baskets-potsdam.asp" title="Potsdam">Potsdam</a></li>
+			<li><a href="gift-baskets-regensburg.asp" title="Regensburg">Regensburg</a></li>
+			<li><a href="gift-baskets-reutlingen.asp" title="Reutlingen">Reutlingen</a></li>
+			<li><a href="gift-baskets-rosenheim.asp" title="Rosenheim">Rosenheim</a></li>
+			<li><a href="gift-baskets-rostock.asp" title="Rostock">Rostock</a></li>
+			<li><a href="gift-baskets-rottenburg.asp" title="Rottenburg">Rottenburg</a></li>
+			<li><a href="gift-baskets-saarbrucken.asp" title="Saarbrucken">Saarbrucken</a></li>
+			<li><a href="gift-baskets-sankt-augus.asp" title="Sankt Augus">Sankt Augus</a></li>
+			<li><a href="gift-baskets-schmalkalden.asp" title="Schmalkalden">Schmalkalden</a></li>
+			<li><a href="gift-baskets-schwäbisch.asp" title="Schwäbisch">Schwäbisch</a></li>
+			<li><a href="gift-baskets-schwäbisch.asp" title="Schwäbisch">Schwäbisch</a></li>
+			<li><a href="gift-baskets-senftenberg.asp" title="Senftenberg">Senftenberg</a></li>
+			<li><a href="gift-baskets-siegen.asp" title="Siegen">Siegen</a></li>
+			<li><a href="gift-baskets-sigmaringen.asp" title="Sigmaringen">Sigmaringen</a></li>
+			<li><a href="gift-baskets-speyer.asp" title="Speyer">Speyer</a></li>
+			<li><a href="gift-baskets-stralsund.asp" title="Stralsund">Stralsund</a></li>
+			<li><a href="gift-baskets-stuttgart.asp" title="Stuttgart">Stuttgart</a></li>
+			<li><a href="gift-baskets-trier.asp" title="Trier">Trier</a></li>
+			<li><a href="gift-baskets-trossingen.asp" title="Trossingen">Trossingen</a></li>
+			<li><a href="gift-baskets-tübingen.asp" title="Tübingen">Tübingen</a></li>
+			<li><a href="gift-baskets-ulm.asp" title="Ulm">Ulm</a></li>
+			<li><a href="gift-baskets-vechta.asp" title="Vechta">Vechta</a></li>
+			<li><a href="gift-baskets-wedel.asp" title="Wedel">Wedel</a></li>
+			<li><a href="gift-baskets-weilheim-bi.asp" title="Weilheim-bi">Weilheim-bi</a></li>
+			<li><a href="gift-baskets-weimar.asp" title="Weimar">Weimar</a></li>
+			<li><a href="gift-baskets-weingarten.asp" title="Weingarten">Weingarten</a></li>
+			<li><a href="gift-baskets-wernigerode.asp" title="Wernigerode">Wernigerode</a></li>
+			<li><a href="gift-baskets-wiesbaden.asp" title="Wiesbaden">Wiesbaden</a></li>
+			<li><a href="gift-baskets-wildau.asp" title="Wildau">Wildau</a></li>
+			<li><a href="gift-baskets-wismar.asp" title="Wismar">Wismar</a></li>
+			<li><a href="gift-baskets-witten.asp" title="Witten">Witten</a></li>
+			<li><a href="gift-baskets-worms.asp" title="Worms">Worms</a></li>
+			<li><a href="gift-baskets-wuppertal.asp" title="Wuppertal">Wuppertal</a></li>
+			<li><a href="gift-baskets-würzburg.asp" title="Würzburg">Würzburg</a></li>
+			<li><a href="gift-baskets-zittau.asp" title="Zittau">Zittau</a></li>
+			<li><a href="gift-baskets-zwickau.asp" title="Zwickau">Zwickau</a></li>
+		</ul>
+    </div>
+</div>
+
+
+
+<footer class="flex" id="footmenu">
+<div class="f-categories">
+<p>categories</p>
+<ul>
+<li><a href="flowers_usa.asp" title="Flowers">flowers</a></li>
+<li><a href="plants_usa.asp" title="Plants">plants</a></li>
+<li><a href="fruits_usa.asp" title="Fresh Fruits">fresh fruits</a></li>
+<li><a href="cakes_usa.asp" title="Cakes">cakes</a></li>
+<li><a href="chocolates_usa.asp" title="Chocolates">chocolates</a></li>
+<li><a href="winegifthampers.asp" title="Wines">wines</a></li>
+<li><a href="gift-basket.asp" title="Gift Baskets">gift baskets</a></li>
+<li><a href="corporate-gift.asp" title="Corporate Gifts">corporate gifts</a></li>
+<li><a href="sameday_usa.asp" title="Same Day Delivery">same day delivery</a></li>
+</ul>
+</div>
+<div class="f-categories">
+<p>occasions</p>
+<ul>
+<li><a href="birthday_usa.asp" title="Birthday">birthday</a></li>
+<li><a href="anniversary_usa.asp" title="Anniversary">anniversary</a></li>
+<li><a href="wedding_usa.asp" title="Wedding">wedding</a></li>
+<li><a href="condolence_usa.asp" title="Condolence">condolence</a></li>
+<li><a href="valentine_usa.asp" title="Valentine's Day">valentine's day</a></li>
+<li><a href="womensday_usa.asp" title="Women's Day">women's day</a></li>
+<li><a href="fathersday_usa.asp" title="Father's Day">father's day</a></li>
+<li><a href="christmas_usa.asp" title="Christmas Gifts">christmas gifts</a></li>
+<li><a href="mothersday_usa.asp" title="Mother's Day">mother's day</a></li>
+<li><a href="newyear_usa.asp" title="New Year Gifts">new year gifts</a></li>
+</ul>
+</div>
+<div class="f-categories">
+<p>locations</p>
+<ul>
+<li><a href="Gift-Baskets-Florida.asp">Florida</a></li>
+<li><a href="Gift-Baskets-Georgia.asp">Georgia</a></li>
+<li><a href="Gift-Baskets-Virginia.asp">Virginia</a></li>
+<li><a href="Gift-Baskets-Washington.asp">Washington</a></li>
+<li><a href="Gift-Baskets-New-Jersey.asp">New Jersey</a></li>
+<li><a href="Gift-Baskets-New-Mexico.asp">New Mexico</a></li>
+<li><a href="Gift-Baskets-New-York.asp">New York</a></li>
+<li><a href="Gift-Baskets-North-Carolina.asp">North Carolina</a></li>
+<li><a href="Gift-Baskets-Kentucky.asp">Kentucky</a></li>
+<li><a href="Gift-Baskets-Louisiana.asp">Louisiana</a></li>
+</ul>
+</div>
+<div class="f-categories">
+<p>policy info.</p>
+<ul>
+<li><a href="about_us.asp">about us</a></li>
+<li><a href="terms.asp">terms & conditions</a></li>
+<!--<li><a href="javascript:void(0)">PRIVACY POLICY</a></li>
+<li><a href="javascript:void(0)">REFUND POLICY</a></li>
+<li><a href="javascript:void(0)">SHIPPING POLICY</a></li>-->
+<li><a href="contact_us.asp">contact us</a></li>
+<li><a href="disclaimer.asp">disclaimer</a></li>
+<li><a href="sitemap.asp">site map</a></li>
+</ul>
+</div>
+
+<div class="f-categories">
+<div class="f-logo">
+<a href="">
+<img src="images/sitelogo.webp" alt="" width="100%" height="75"></a>
+<p><b>&copy;</b>&nbsp;2022 by <a href="" style="color:black;">giftbasketsgermany.de</a></p>
+
+</a>
+</div>
+</div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/script.js"></script>  
+</body>
+</html>

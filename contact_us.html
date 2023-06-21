@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--header-->    
+<header class="index-heading">
+  <section class="head11 flex">
+      <div class="head11-left">
+          <img src="images/flag.gif" alt="" width="35" height="20">
+          <h3>Gift Basket and Hampers Delivery in Germany</h3>
+      </div>
+      <div class="head11-right">
+          <a href="" alt="Corporate Orders">Corporate Orders</a>
+      </div>
+  </section>
+
+  <section class="head2 flex">
+      <div class="logo">
+          <div class="logo-img" onclick="window.location.href=''">
+              <img src="images/sitelogo.webp" alt="Logo" width="312" height="82">
+          </div>
+          <p>Send Gift Baskets & Hampers to Germany</p>
+      </div>
+
+      <div class="search-bar2">
+          <div class="search-bar2-main">
+          <input type="text" name="searchKey" id="searchKey" placeholder="Search flowers, cakes etc." pattern=".{3,}" required="" title="3 characters minimum">
+          <button type="submit" id="searchbtnn" aria-label="searchbtnn" class="search-btn serbtnnew"><i class="fa fa-search"></i></button>
+          </div>
+          <label id="searchAlert"></label>
+      </div>
+
+      <div class="head2-right flex">
+          <a href="" class="head2-options" aria-label="contact us">
+              <p>Contact Us</p>
+          </a>
+          <a href="" class="head2-options" title="Login"aria-label="login">
+              <i class="fa-solid fa-user"></i>
+          <!-- <a href="" class="pre-navigation ico-login">Log Out</a> -->
+          <a href="" class="head2-options">
+              <i class="fa-solid fa-cart-shopping" alt="Shopping Cart"aria-label="cart"></i>
+          </a>
+      </div>
+  </section>
+</header>
+
+<!--Navbar-->
+<nav class="categories flex">
+    <div class="view-cat" onClick="pc_menu()"><i class="fa-solid fa-bars"></i><i class="fa-solid fa-xmark" style="display:none;"></i>VIEW ALL CATEGORIES</div>
+    <ul class="flex PC-menu">
+    <li class="cat-menu "><a onClick="cat_menu_show()" class="category-btn">All Categories<span class="fa fa-caret-down"></span></a>
+    <div id="cat-mega-menu">
+    <ul class="cat-menu-ul">
+    <li><a  href="gifts_usa.asp" title="Exclusive Gift Baskets">Gourmet Gift Baskets</a></li>
+    <li><a href="winegifthampers.asp" title="Wine Gift Baskets">Wine Gift Baskets</a></li>
+    <li><a href="chocolates_usa.asp" title="chocolate">Chocolates</a></li>
+    <li><a href="hampers.asp" title="Hampers">Hampers</a></li>
+    <li><a href="luxury-gift.asp" title="Luxury Gift Baskets">Luxury Gift Baskets</a></li>					
+        </ul>
+    <ul class="cat-menu-ul">
+    <li><a href="fruits_usa.asp" title="Fruit Gift Baskets">Fruit Gift Baskets</a></li>
+    <li><a href="plants_usa.asp" title="Plants">Plants</a></li>
+    <li><a href="flowers_usa.asp" title="Fresh Flowers">Fresh Flowers</a></li>
+    <li><a href="christmas-hampers.asp" title="Christmas Hampers">Christmas Hampers</a></li>
+    <li><a href="non-alcohol-gift.asp" title="No-Alcohol Gift Baskets">No-Alcohol Baskets</a></li>
+    </ul>
+    <ul class="cat-menu-ul">
+    <li><a href="sameday_usa.asp" title="Same Day Delivery">Same Day Delivery</a></li>
+    <li><a href="gift-basket.asp" title="Gift Baskets">Gift Baskets</a></li>
+    <li><a href="corporate-gift.asp" title="Corporate Gifts">Corporate Gifts</a></li>
+    <li><a href="kosher-gift.asp" title="Kosher Gift Baskets">Kosher Gift Baskets</a></li>
+    </ul>
+    <ul class="cat-menu-ul">
+    <li><a href="hampers_scottish.asp" title="Scottish Hamper">Scottish Hamper</a></li>
+        <li><a href="hampers_british.asp" title="British Hamper">British Hamper</a></li>
+    <li><a href="hampers_irish.asp" title="Irish Hamper">Irish Hamper</a></li>
+    <li><a href="hampers_glutenfree.asp" title="Gluten Free Hamper">Gluten-Free Hamper</a></li>
+    </ul>
+    </div>
+    </li>
+    <li class="oc-menu" onClick="abc()"><a href="#" class="occation-btn">All Occasions<span class="fa fa-caret-down"></span></a>
+    <div id="oc-mega-menu">
+    <ul class="oc-menu-ul">
+    <li><a href="anniversary_usa.asp" title="Anniversary">Anniversary</a></li>
+    <li><a href="birthday_usa.asp" title="Birthday">Birthday</a></li>
+    <li><a href="congratulation_usa.asp" title="Congratulation">Congratulation</a></li>
+    <li><a href="condolence_usa.asp" title="Condolence">Condolence</a></li>
+    </ul>
+    <ul class="oc-menu-ul">
+    <li><a href="newborn_usa.asp" title="New Born">New Born</a></li>
+    <li><a href="wedding_usa.asp" title="Wedding">Wedding</a></li>
+    <li><a href="halloween_usa.asp" title="Halloween Gifts ">Halloween Gifts</a></li>
+    </ul>
+    <ul class="oc-menu-ul">
+    <li><a href="fathersday_usa.asp" title="Father's Day ">Father' Day</a></li>
+    <li><a href="christmas_usa.asp" title="Christmas Gifts">Christmas Gifts</a></li>
+    <li><a href="mothersday_usa.asp" title="Mother's Day">Mother's Day</a></li>
+    </ul>
+    <ul class="oc-menu-ul">
+    <li><a href="newyear_usa.asp" title="New Year">New Year Gifts</a></li>
+    <li><a href="thanksgivingday.asp" title="Thanks Giving Day">Thanksgiving Gifts</a></li>
+    <li><a href="valentine_usa.asp" title="Valentine Day">Valentine Day</a></li>
+    </ul>
+    </div>
+    </li>
+    <li class=""><a class=""href="mothersday_usa.asp" title="Father's Day">Father's Day</a></li>
+    <li><a class="birthday-btn" href="birthday_usa.asp" title="Birthday">Birthday</a></li>
+    <li><a class="wine-btn"href="winegifthampers.asp" title="Wine">Wine</a></li>
+    <li><a class="location-btn" href="location.asp" title="Location">Where we deliver</a></li>
+    <li  class="location-li"><a class="location-li-btn"href="sell-products.asp" title="Sale">Sale</a></li>
+    </ul>
+</nav>
+
+<ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li><a href="#" class="tempting">Contact Us</a></li>
+</ul>
+
+<div class="contact-container">
+  <div class="contact-lt">
+    <div class="lt-head">Contact Us</div>
+    <div class="lt-body">
+      <div class="con-field">
+        <div class="title"><sup>*</sup><label>Type of Query :</label></div>
+          <select name="" id="query">
+            <option value="0">Please select an Option</option>
+            <option value="related">Want to place an order?</option>
+            <option value="existing">Regarding an existing order</option>
+            <option value="other">Other</option>
+          </select>
+      </div>
+      <div class="con-field hidediv" id="showrelated" style="display: none;">
+        <div class="title"><sup>*</sup><label>Related to:</label></div>
+        <select name="" id="">
+					<option value="0">Please Select an Option</option>
+          <option value="- Delivery Location">- Delivery Location</option>
+          <option value="- When can we deliver">- When can we deliver</option>
+          <option value="- Products">- Products</option>
+          <option value="- Payments">- Payments</option>
+          <option value="- Refund Policy">- Refund Policy</option>
+          <option value="- Bulk Order">- Bulk Order</option>
+          <option value="- Corporate enquiry">- Corporate enquiry</option>
+          <option value="- Customized order">- Customized order</option>
+          <option value="- Other">- Other</option>
+        </select>
+      </div>
+      <div class="hidediv hidediv" id="showexisting" style="display: none;">
+      <div class="con-field " >
+        <div class="title"><sup>*</sup><label>Related to:</label></div>
+        <select id="" name="" >	
+					<option value="0">Please Select an Option</option>
+          <option value="- Did you receive my order?">- Did you receive my order?</option>
+          <option value="- When will my order get delivered?">- When will my order get delivered?</option>
+          <option value="- Cancel my order">- Cancel my order</option>
+          <option value="- Want a refund">- Want a refund</option>
+          <option value="- Make a complaint">- Make a complaint</option>
+          <option value="- Other">- Other</option></select>
+          
+      </div>
+      <div class="con-field " >
+        <div class="title"><sup>*</sup><label>Order ID:</label></div>
+        <input type="text" name="" id="" placeholder="Please Enter User ID">
+      </div>
+    </div>
+      <div class="con-field hidediv" id="showother" style="display: none;">
+        <div class="title">
+          <sup>*</sup><label for="">Subject</label></div>
+          <input type="text" name="" id="" placeholder="Enter Your Subject">
+      </div>
+      <div class="con-field">
+        <div class="title">
+        <sup>*</sup><label for="">Name</label></div>
+        <input type="text" name="" id="" placeholder="Your Name">
+      </div>
+      <div class="con-field">
+        <div class="title">
+        <sup>*</sup><label for="">Email</label></div>
+        <input type="text" name="" id="" placeholder="Your Email">
+      </div>
+      <div class="con-field selcountry"  >
+        <div class="title">
+        <sup>*</sup><label for="">Where are you from ?:</label></div>
+        <select name="country" id="country">
+        <option value="0">Select Country</option>
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="American Samoa">American Samoa</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Anguilla">Anguilla</option>
+        <option value="Antigua">Antigua</option>
+        <option value="Antigua And Barbuda">Antigua And Barbuda</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Aruba">Aruba</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Bahamas">Bahamas</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Barbados">Barbados</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Belize">Belize</option>
+        <option value="Benin">Benin</option>
+        <option value="Bermuda">Bermuda</option>
+        <option value="Bhutan">Bhutan</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Brazil">Brazil</option>
+        <option value="British Virgin Islands">British Virgin Islands</option>
+        <option value="Brunei">Brunei</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Burkina Faso">Burkina Faso</option>
+        <option value="Burma">Burma</option>
+        <option value="Burundi">Burundi</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Canada">Canada</option>
+        <option value="Cape Verde">Cape Verde</option>
+        <option value="Cayman Islands">Cayman Islands</option>
+        <option value="Central African Republic">Central African Republic</option>
+        <option value="Chad">Chad</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Christmas Island">Christmas Island</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Comoros">Comoros</option>
+        <option value="Congo">Congo</option>
+        <option value="Cook Islands">Cook Islands</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Curacao">Curacao</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Djibouti">Djibouti</option>
+        <option value="Dominica">Dominica</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="East Timor">East Timor</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt">Egypt</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Equatorial Guinea">Equatorial Guinea</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Falkland Islands">Falkland Islands</option>
+        <option value="Faroe Islands">Faroe Islands</option>
+        <option value="Fiji">Fiji</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="French Guiana">French Guiana</option>
+        <option value="French Polynesia">French Polynesia</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Gambia">Gambia</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Germany">Germany</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Gibraltar">Gibraltar</option>
+        <option value="Greece">Greece</option>
+        <option value="Greenland">Greenland</option>
+        <option value="Grenada">Grenada</option>
+        <option value="Guadeloupe">Guadeloupe</option>
+        <option value="Guam">Guam</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Guinea">Guinea</option>
+        <option value="Guinea-Bissau">Guinea-Bissau</option>
+        <option value="Guyana">Guyana</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India">India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Iran">Iran</option>
+        <option value="Iraq">Iraq</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Ivory Coast">Ivory Coast</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Kiribati">Kiribati</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Kyrgyzstan">Kyrgyzstan</option>
+        <option value="Laos">Laos</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Lesotho">Lesotho</option>
+        <option value="Liberia">Liberia</option>
+        <option value="Libya">Libya</option>
+        <option value="Liechtenstein">Liechtenstein</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Macau">Macau</option>
+        <option value="Macedonia">Macedonia</option>
+        <option value="Madagascar">Madagascar</option>
+        <option value="Malawi">Malawi</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Maldives">Maldives</option>
+        <option value="Mali">Mali</option>
+        <option value="Malta">Malta</option>
+        <option value="Marshall Islands">Marshall Islands</option>
+        <option value="Martinique">Martinique</option>
+        <option value="Mauritania">Mauritania</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Mayotte">Mayotte</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Micronesia">Micronesia</option>
+        <option value="Moldova">Moldova</option>
+        <option value="Monaco">Monaco</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Nauru">Nauru</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="Netherlands Antilles">Netherlands Antilles</option>
+        <option value="New Caledonia">New Caledonia</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Niue">Niue</option>
+        <option value="Norfolk Island">Norfolk Island</option>
+        <option value="North Korea">North Korea</option>
+        <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+        <option value="Norway">Norway</option>
+        <option value="Oman">Oman</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Palau">Palau</option>
+        <option value="Palestine">Palestine</option>
+        <option value="Panama">Panama</option>
+        <option value="Papua new Guinea">Papua new Guinea</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Pitcairn Island">Pitcairn Island</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Reunion">Reunion</option>
+        <option value="Romania">Romania</option>
+        <option value="Russia">Russia</option>
+        <option value="Rwanda">Rwanda</option>
+        <option value="Saint Helena">Saint Helena</option>
+        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+        <option value="Saint Lucia">Saint Lucia</option>
+        <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+        <option value="Saint Vincent and the Grenadin">Saint Vincent and the Grenadin</option>
+        <option value="Samoa">Samoa</option>
+        <option value="San Marino">San Marino</option>
+        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Scotland">Scotland</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+        <option value="Seychelles">Seychelles</option>
+        <option value="Sierra Leone">Sierra Leone</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovakia">Slovakia</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="Solomon Islands">Solomon Islands</option>
+        <option value="Somalia">Somalia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Georgia">South Georgia</option>
+        <option value="South Korea">South Korea</option>
+        <option value="South Sandwich Islands">South Sandwich Islands</option>
+        <option value="Spain">Spain</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Swaziland">Swaziland</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Syria">Syria</option>
+        <option value="Taiwan">Taiwan</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Togo">Togo</option>
+        <option value="Tokelau">Tokelau</option>
+        <option value="Tonga">Tonga</option>
+        <option value="Trinidad And Tobago">Trinidad And Tobago</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+        <option value="Tuvalu">Tuvalu</option>
+        <option value="U.S. Virgin Islands">U.S. Virgin Islands</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Vanuatu">Vanuatu</option>
+        <option value="Vatican City (Holy City)">Vatican City (Holy City)</option>
+        <option value="Venezuela">Venezuela</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="Wallis and Futuna">Wallis and Futuna</option>
+        <option value="West Bank">West Bank</option>
+        <option value="Western Sahara">Western Sahara</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Yugoslavia">Yugoslavia</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option><br/>
+        </select>
+      </div>
+      <div class="con-field no-flex">
+        <div class="title">
+        <sup>*</sup><label for="">Message:</label></div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </div>
+      <div class="verify-captcha-block">
+      <div class="verify">
+        <label for="">Verification</label>
+        <div><input type="text" name="" id="" readonly><i class="fa-solid fa-arrows-rotate"></i></div>
+      </div>
+      <div class="captcha">
+        <div><sup>*</sup><label for="">Please enter captcha</label></div>
+        <div><input type="text" name="" id=""></div>
+      </div>
+    </div>
+      <div class="con-field flex-end">
+        <input type="submit" value="submit">
+      </div>
+    </div>
+  </div>
+  <div class="contact-rt">
+    <div class="bulk">
+      <div>Corporate/Bulk Order</div>
+      <input type="button" value="click here">
+    </div>
+    <div class="bulk-add-con">
+      <div class="bulk-add-head">Address</div>
+      <div class="bulk-add"><i class="fa-sharp fa-solid fa-location-dot"></i> Los Angeles<br>CA 90040, USA</div>
+    </div>
+  </div>
+</div>
+<!--Footer-->
+<footer class="flex" id="footmenu">
+  <div class="f-categories">
+  <p>categories</p>
+  <ul>
+  <li><a href="flowers_usa.asp" title="Flowers">flowers</a></li>
+  <li><a href="plants_usa.asp" title="Plants">plants</a></li>
+  <li><a href="fruits_usa.asp" title="Fresh Fruits">fresh fruits</a></li>
+  <li><a href="cakes_usa.asp" title="Cakes">cakes</a></li>
+  <li><a href="chocolates_usa.asp" title="Chocolates">chocolates</a></li>
+  <li><a href="winegifthampers.asp" title="Wines">wines</a></li>
+  <li><a href="gift-basket.asp" title="Gift Baskets">gift baskets</a></li>
+  <li><a href="corporate-gift.asp" title="Corporate Gifts">corporate gifts</a></li>
+  <li><a href="sameday_usa.asp" title="Same Day Delivery">same day delivery</a></li>
+  </ul>
+  </div>
+  <div class="f-categories">
+  <p>occasions</p>
+  <ul>
+  <li><a href="birthday_usa.asp" title="Birthday">birthday</a></li>
+  <li><a href="anniversary_usa.asp" title="Anniversary">anniversary</a></li>
+  <li><a href="wedding_usa.asp" title="Wedding">wedding</a></li>
+  <li><a href="condolence_usa.asp" title="Condolence">condolence</a></li>
+  <li><a href="valentine_usa.asp" title="Valentine's Day">valentine's day</a></li>
+  <li><a href="womensday_usa.asp" title="Women's Day">women's day</a></li>
+  <li><a href="fathersday_usa.asp" title="Father's Day">father's day</a></li>
+  <li><a href="christmas_usa.asp" title="Christmas Gifts">christmas gifts</a></li>
+  <li><a href="mothersday_usa.asp" title="Mother's Day">mother's day</a></li>
+  <li><a href="newyear_usa.asp" title="New Year Gifts">new year gifts</a></li>
+  </ul>
+  </div>
+  <div class="f-categories">
+  <p>locations</p>
+  <ul>
+  <li><a href="">Aachen</a></li>
+  <li><a href="">Berlin</a></li>
+  <li><a href="">Kassel</a></li>
+  <li><a href="">Ottersberg</a></li>
+  <li><a href="">Moritzburg</a></li>
+  <li><a href="">Zittau</a></li>
+  <li><a href="">Heidelberg</a></li>
+  <li><a href="">Iserlohn</a></li>
+  <li><a href="">Vechta</a></li>
+  <li><a href="">Weimar</a></li>
+  </ul>
+  </div>
+  <div class="f-categories">
+  <p>policy info.</p>
+  <ul>
+  <li><a href="about_us.asp">about us</a></li>
+  <li><a href="terms.asp">terms & conditions</a></li>
+  
+  <li><a href="contact_us.asp">contact us</a></li>
+  <li><a href="disclaimer.asp">disclaimer</a></li>
+  <li><a href="sitemap.asp">site map</a></li>
+  </ul>
+  </div>
+  
+  <div class="f-categories">
+  <div class="f-logo">
+      <a href="">
+      <img src="images/sitelogo.webp" alt="" width="100%" height="75"></a>
+  <p><b>&copy;</b>&nbsp;2022 by <a href="" style="color:black;">giftbasketsgermany.de</a></p>
+   
+      </a>
+  </div>
+  </div>
+  </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/script.js"></script>   
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#query").on('change', function(){
+    var demovalue = $(this).val();  
+      $(".hidediv").hide();
+      if(demovalue == "existing"){
+        $(".selcountry").hide();
+      }
+      else{
+        $(".selcountry").show();
+      }
+      $("#show"+demovalue).show();
+  });
+}) ;
+
+</script> 
+</body>
+</html>
